@@ -42,7 +42,7 @@ deviceCli.connect()
 while True:
         #Get Sensor Data from DHT11
  
-         data = { "d":{'temp' : temp, 'pulse': pulse ,'oxygen': oxygen,"lat":lat, 'lon': lon }
+         data = { "d":{'temp' : temp, 'pulse': pulse ,'oxygen': oxygen,"lat":lat, 'lon': lon }}
          #print data
          def myOnPublishCallback():
              print("Published Temperature = %s C" % temp,"Humidity = %s %%"%Humidity,"to IBM Watson")
